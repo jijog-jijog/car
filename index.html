@@ -3,24 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Navbar</title>
+    <title>Car Showroom</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <h1>Welcome to Jijo Weels</h1>
+    </header>
 
-    <h1 id="name" style="float: left;">Jijo Automotive</h1>
-    <div class="navbar">
-        <a href="#contact">Contact</a>
-        <a href="#about">About Us</a>
-        <a href="#product">Product</a>
+    <nav>
+        <ul>
+            <li><a href="#" style="font-size: small;">Home</a></li>
+            <li><a href="#" style="font-size: small;">About Us</a></li>
+            <li><a href="#" style="font-size: small;">Our Cars</a></li>
+            <li><a href="#" style="font-size: small;">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div id="searchbox">
+        <input type="text" placeholder="Search..." style="width: 300px; margin-right: 10px;">
+        <button>Search</button>
     </div>
-    <div id="search">
-        <input id="searchbox" type="text" placeholder="Search">
-        <button id="searchbutton">Search</button>
+
+    <div class="container">
+        <div class="car">
+            <img src="images/20201015105617_2021-Toyota-Innova-Crysta-facelift-front-silver.jpg" alt="Car 1">
+            <div class="car-details">
+                <h2>Innova Crysta</h2>
+                <p>Engine: 2.5 L V4</p>
+                <p>Price: Rs.45L</p>
+                <div id="get" style="display: inline-block;padding-left: 900px;">
+                    <button>Get details</button>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="car">
+            <img src="images/20220909114540_Hyryder.jpg" alt="Car 2" style="height: 204px; object-fit: cover;">
+            <div class="car-details">
+                <h2>Urban Hyryder</h2>
+                <p>Engine: 1.5L V3</p>
+                <p>Price: Rs.20L</p>
+                <div id="get" style="display: inline-block;padding-left: 900px;">
+                    <button>Get details</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="car">
+            <img src="images/toyota_zd6winnovahycross.jpg" alt="Car 3">
+            <div class="car-details">
+                <h2>Innova hycross</h2>
+                <p>Engine: 2.0L V4</p>
+                <p>Price: Rs.40L</p>
+                <div id="get" style="display: inline-block;padding-left: 900px;">
+                    <button>Get details</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="images">
-        <img src="images/20201015105617_2021-Toyota-Innova-Crysta-facelift-front-silver.jpg" alt="2021 Toyota Innova Crysta facelift front view" width="500" height="400">
-        <h4 id="innova">INNOVA CRYSTA</h4>
-    </div>
+
+    <footer>
+        <p>&copy; 2025 Jijo's Car Showroom. All rights reserved.</p>
+    </footer>
 </body>
 </html>
